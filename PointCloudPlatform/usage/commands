@@ -1,0 +1,4 @@
+COMMANDS :
+    man : Show how to use command;
+    read : Read data from file;
+    

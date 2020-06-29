@@ -1,0 +1,13 @@
+COMMAND:
+    read : read <POINT_CLOUD_PATH> [OPTIONS]
+    
+    DESCRIPTIONS:
+        Read point cloud data from <POINT_CLOUD_PATH> with [OPTIONS](now suport .ply .obj .pcd file format)
+    
+    OPTIONS:
+        Set background RGB from 0-255:
+            -bgr -bgg -bgb
+        Set point RGB from 0-255:
+            -pr -pg -pb
+
+    e.g. read POINT_CLOUD_PATH -bgr 255 -bgg 255 -bgb 255 -pr 0 -pg 0 -pb 0

@@ -1,0 +1,7 @@
+COMMAND:
+    man : man [COMMAND]
+
+    DESCRIPTIONS:
+        Show how to use [COMMAND]
+
+
