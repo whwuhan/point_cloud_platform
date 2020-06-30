@@ -3,5 +3,5 @@
 macOS下  
 ‘’‘
 cd your_path/PointCloudPlatform/Build/Products/Debug  
-./pcp
+./pcp  
 ’‘’
