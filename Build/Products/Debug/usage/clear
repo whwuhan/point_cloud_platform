@@ -1,0 +1,5 @@
+COMMAND:
+    clear : clear
+    
+    DESCRIPTIONS:
+        Clear the point cloud data.
