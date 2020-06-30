@@ -5,19 +5,15 @@
 #include "include/point_cloud_viewer.hpp"
 #include "include/usage.hpp"
 #include "include/colors.hpp"
-void showUseage();
 int main(){
     std::string command("");                    //输入的命令和参数
     std::vector<std::string> command_split;     //分解命令和参数
-    unsigned long command_size = 0;                       //命令行size
-    
+    unsigned long command_size = 0;             //命令行size
     wh::pco::PointCloudOperation pco;           //点云操作对象
     wh::pcv::PointCloudViewer pcv;              //点云显示对象
     wh::ua::Usage ua;                           //使用手册管理对象
-    
     ua.openUseage("./usage/introduction");
     ua.showUseage();
-    
     do{
         std::cerr<<WHITE<<"[Point Cloud Platform:] "<<RESET;
         //获取命令
@@ -77,7 +73,7 @@ int main(){
             pcv.show();
             continue;
         }
-        //nor
+        //nor归一化点云
         if(command_split[0] == "nor"){
             if(pco.getPointCloudPtr()->size() == 0){
                 std::cerr<<RED<<"PLEASE READ POINTCLOUD DATA FIRST!!!"<<RESET<<std::endl;
@@ -88,14 +84,14 @@ int main(){
                 continue;
             }
         }
-        //clear
+        //clear清除点云
         if(command_split[0] == "clear"){
             pco.clear();
             pcv.clear();
             std::cerr<<YELLOW<<"Clear all!"<<RESET<<std::endl;
             continue;
         }
-        //exit
+        //exit退出程序
         if(command_split[0] == "exit"){
             std::cerr<<YELLOW<<"Bye~"<<RESET<<std::endl;
             continue;
@@ -109,15 +105,4 @@ int main(){
 }
 
 
-//void showUseage(){
-//    std::cerr<<YELLOW<<"COMMAND:"<<std::endl;
-//    std::cerr<<"\t"<<"read : read POINT_CLOUD_PATH [OPTION]"<<std::endl;
-//    std::cerr<<"\t"<<"DESCRIPTION:\n\t\tread point cloud data from POINT_CLOUD_PATH with OPTIONS(now suport .ply .obj .pcd file format)\n";
-//    std::cerr<<"\t"<<"OPTIONS:\n";
-//    std::cerr<<"\t\t"<<"set background RGB from 0-255:\n";
-//    std::cerr<<"\t\t"<<"-bgr -bgg -bgb\n";
-//    std::cerr<<"\t\t"<<"set point RGB from 0-255:\n";
-//    std::cerr<<"\t\t"<<"-pr -pg -pb\n";
-//    std::cerr<<"\t\t"<<"e.g. pcp read POINT_CLOUD_PATH -bgr 255 -bgg 255 -bgb 255 -pr 0 -pg 0 -pb 0\n\n"<<std::endl;
-//    std::cerr<<RESET<<std::endl;
-//}
+

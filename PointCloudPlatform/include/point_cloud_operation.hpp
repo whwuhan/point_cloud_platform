@@ -38,32 +38,24 @@ namespace wh{
         class PointCloudOperation
         {
         private:
-            std::string _file_path;                              //输入点云路径
-            std::string _type;                                   //点云格式
+            std::string _file_path;//输入点云路径
+            std::string _type;//点云格式
             pcl::PointCloud<pcl::PointXYZ>::Ptr _point_cloud_ptr;//点云指针
         public:
             PointCloudOperation();
             PointCloudOperation(const std::string& file_name);
-            pcl::PointCloud<PointT>::Ptr getPointCloudPtr()const;                    //获取点云指针
-            //pcl::PointCloud<pcl::PointXYZ>::Ptr getOperatedPointCloudPtr()const;
-            int readData(const std::string &file_path);                              //读取数据，成功返回1，否则-1
-            //int getOriginPointCloud(const std::string &file_in, std::string &file_out="");//放到坐标原点，成功返回1，否则-1
-            //归一化点云，成功返回1，否则-1目前采用AABB包围盒做归一化
-            int getNormalizedPointCloud();
-            //读取PTS文件，成功返回1，否则-1
-            int loadPTSFlile(const std::string,pcl::PointCloud<pcl::PointXYZ>::Ptr = nullptr);
-            int pst2pcd(const std::string &pst_name, const std::string &pcd_name);
-            //降采样，成功返回1，否则-1
-            int downSampling(std::string &file_in,std::string &file_out,float precision = 0.1f);
-            int outliersRemoval(std::string &file_in, std::string &file_out);           //去噪，成功返回1，否则-1
+            pcl::PointCloud<PointT>::Ptr getPointCloudPtr()const;//获取点云指针
+            int readData(const std::string& file_path);//读取数据，成功返回1，否则-1
+            int writeData(const std::string& file_path);//将操作后的点云数据写入硬盘，成功返回1，否则返回-1
+            int getNormalizedPointCloud();//归一化点云，成功返回1，否则-1目前采用AABB包围盒做归一化
+            int loadPTSFlile(const std::string,pcl::PointCloud<pcl::PointXYZ>::Ptr = nullptr);//读取PTS文件，成功返回1，否则-1
+            int pst2pcd(const std::string &pst_name, const std::string &pcd_name);//pts文件转pcd文件
+            int downSamplingVoxel(float precision = 0.1f);//降采样，成功返回1，否则-1
+            int outliersRemoval(std::string &file_in, std::string &file_out);//去噪，成功返回1，否则-1
             int ICP(std::string &file_model,std::string &file_raw,std::string &file_out);//ICP配准，成功返回1，否则-1
             void clear();//清理数据
             virtual ~PointCloudOperation();
         };
     }
 }
-
-
-
-
 #endif /* point_cloud_operation_hpp */

@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58338CFB24877EC400FD6135 /* point_cloud_operation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58338CF924877EC400FD6135 /* point_cloud_operation.cpp */; };
-		5859433C23CEF71700B08F1E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5859433B23CEF71700B08F1E /* main.cpp */; };
-		5860DE3D24879C1100DF0F7F /* point_cloud_viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5860DE3B24879C1100DF0F7F /* point_cloud_viewer.cpp */; };
-		58933D53248D12A500BB2CF2 /* usage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58933D51248D12A500BB2CF2 /* usage.cpp */; };
 		58A386F424AAEFF700A252B0 /* libpcl_apps.1.9.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5811803E24AAEB0D00EC0EE3 /* libpcl_apps.1.9.1.dylib */; };
 		58A386F524AAEFF700A252B0 /* libpcl_apps.1.9.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5811803E24AAEB0D00EC0EE3 /* libpcl_apps.1.9.1.dylib */; };
 		58A386F624AAEFF700A252B0 /* libpcl_apps.1.9.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5811803E24AAEB0D00EC0EE3 /* libpcl_apps.1.9.1.dylib */; };
@@ -585,6 +581,10 @@
 		58A3892F24AAF05B00A252B0 /* libvtkViewsQt-8.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EAE8FC248692F200E458ED /* libvtkViewsQt-8.2.1.dylib */; };
 		58A3893024AAF05B00A252B0 /* libvtkWrappingPython38Core-8.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EAE894248692ED00E458ED /* libvtkWrappingPython38Core-8.2.1.dylib */; };
 		58A3893124AAF05B00A252B0 /* libvtkWrappingPython38Core-8.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EAE894248692ED00E458ED /* libvtkWrappingPython38Core-8.2.1.dylib */; };
+		58A3893424AB1EF800A252B0 /* test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58A3893224AB1EF800A252B0 /* test.cpp */; };
+		58A3893524AB22C300A252B0 /* point_cloud_operation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58338CF924877EC400FD6135 /* point_cloud_operation.cpp */; };
+		58A3893624AB22C300A252B0 /* point_cloud_viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5860DE3B24879C1100DF0F7F /* point_cloud_viewer.cpp */; };
+		58A3893724AB22C300A252B0 /* usage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58933D51248D12A500BB2CF2 /* usage.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1530,6 +1530,7 @@
 		58933D52248D12A500BB2CF2 /* usage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = usage.hpp; sourceTree = "<group>"; };
 		58933D56248D1C9000BB2CF2 /* read */ = {isa = PBXFileReference; lastKnownFileType = text; path = read; sourceTree = "<group>"; };
 		58933D57248D1E9600BB2CF2 /* commands */ = {isa = PBXFileReference; lastKnownFileType = text; path = commands; sourceTree = "<group>"; };
+		58A3893224AB1EF800A252B0 /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
 		58B4D23323CD93D0007E9108 /* pcp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pcp; sourceTree = BUILT_PRODUCTS_DIR; };
 		58EAE775248692A200E458ED /* libpcl_ml.1.9.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_ml.1.9.1.dylib; path = ../../../../../../../../usr/local/Cellar/pcl/1.9.1_8/lib/libpcl_ml.1.9.1.dylib; sourceTree = "<group>"; };
 		58EAE776248692A200E458ED /* libpcl_octree.1.9.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_octree.1.9.1.dylib; path = ../../../../../../../../usr/local/Cellar/pcl/1.9.1_8/lib/libpcl_octree.1.9.1.dylib; sourceTree = "<group>"; };
@@ -3827,6 +3828,7 @@
 				5859433A23CEF68600B08F1E /* src */,
 				5859433923CEF67200B08F1E /* include */,
 				5859433B23CEF71700B08F1E /* main.cpp */,
+				58A3893224AB1EF800A252B0 /* test.cpp */,
 			);
 			path = PointCloudPlatform;
 			sourceTree = "<group>";
@@ -3889,10 +3891,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5860DE3D24879C1100DF0F7F /* point_cloud_viewer.cpp in Sources */,
-				58933D53248D12A500BB2CF2 /* usage.cpp in Sources */,
-				58338CFB24877EC400FD6135 /* point_cloud_operation.cpp in Sources */,
-				5859433C23CEF71700B08F1E /* main.cpp in Sources */,
+				58A3893524AB22C300A252B0 /* point_cloud_operation.cpp in Sources */,
+				58A3893624AB22C300A252B0 /* point_cloud_viewer.cpp in Sources */,
+				58A3893724AB22C300A252B0 /* usage.cpp in Sources */,
+				58A3893424AB1EF800A252B0 /* test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

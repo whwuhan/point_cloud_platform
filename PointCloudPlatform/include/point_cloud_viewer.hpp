@@ -22,7 +22,7 @@ namespace wh{
             double _point_color_r;
             double _point_color_g;
             double _point_color_b;
-            int _point_size;        //点的大小
+            int _point_size;        //点的显示大小
         public:
             PointCloudViewer(double background_color_r=0.0,
                              double background_color_g=0.0,
