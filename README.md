@@ -5,3 +5,4 @@ macOS下启动程序：
 % cd your_path/PointCloudPlatform/Build/Products/Debug  
 % ./pcp  
 ```
+![avatar](image/QQ20200630-123927@2x.png)
