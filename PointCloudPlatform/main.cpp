@@ -19,7 +19,7 @@ int main(){
     ua.showUseage();
     
     do{
-        std::cerr<<WHITE<<"[Input commands:] "<<RESET;
+        std::cerr<<WHITE<<"[Point Cloud Platform:] "<<RESET;
         //获取命令
         getline(cin, command);
         boost::split(command_split, command, boost::is_any_of(" "), boost::token_compress_on);
@@ -79,10 +79,14 @@ int main(){
         }
         //nor
         if(command_split[0] == "nor"){
+            if(pco.getPointCloudPtr()->size() == 0){
+                std::cerr<<RED<<"PLEASE READ POINTCLOUD DATA FIRST!!!"<<RESET<<std::endl;
+                continue;
+            }
             if(pco.getNormalizedPointCloud() == 1){
                 std::cerr<<YELLOW<<"Point cloud has been normalized!!!"<<RESET<<std::endl;
+                continue;
             }
-            continue;
         }
         //clear
         if(command_split[0] == "clear"){
@@ -91,9 +95,14 @@ int main(){
             std::cerr<<YELLOW<<"Clear all!"<<RESET<<std::endl;
             continue;
         }
+        //exit
+        if(command_split[0] == "exit"){
+            std::cerr<<YELLOW<<"Bye~"<<RESET<<std::endl;
+            continue;
+        }
         //所有命令都不匹配
         for(int i = 0;i < command_size;i++){
-                std::cerr<<RED<<"\""<<command_split[i]<<"\""<< "THIS COMMAND DOES NOT EXISTS!!!"<<RESET<<std::endl;
+                std::cerr<<RED<<"\""<<command_split[i]<<"\""<< " THIS COMMAND DOES NOT EXISTS!!!"<<RESET<<std::endl;
         }
     }while(command_split[0] != "exit");
     return 0;

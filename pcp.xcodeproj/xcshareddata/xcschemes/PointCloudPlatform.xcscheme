@@ -36,7 +36,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "YES"
-      customWorkingDirectory = "/Users/wuhan/wuhan/iCollections/&#x6b63;&#x5728;&#x505a;.../&#x6b63;&#x5728;&#x505a;...../PointCloudPlatform/PointCloudPlatform"
+      customWorkingDirectory = "/Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"

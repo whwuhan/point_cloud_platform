@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/wuhan/wuhan/iCollections/正在做.../正在做...../PointCloudPlatform/PointCloudPlatform/main.cpp \
-  /Users/wuhan/wuhan/iCollections/正在做.../正在做...../PointCloudPlatform/PointCloudPlatform/include/point_cloud_operation.hpp \
+  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/main.cpp \
+  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/point_cloud_operation.hpp \
   /usr/local/include/pcl-1.9/pcl/io/io.h \
   /usr/local/include/pcl-1.9/pcl/common/io.h \
   /usr/local/include/pcl-1.9/pcl/pcl_base.h \
@@ -402,9 +402,9 @@ dependencies: \
   /usr/local/include/pcl-1.9/pcl/search/organized.h \
   /usr/local/include/pcl-1.9/pcl/common/projection_matrix.h \
   /usr/local/include/pcl-1.9/pcl/common/impl/projection_matrix.hpp \
-  /Users/wuhan/wuhan/iCollections/正在做.../正在做...../PointCloudPlatform/PointCloudPlatform/include/typedefs.hpp \
-  /Users/wuhan/wuhan/iCollections/正在做.../正在做...../PointCloudPlatform/PointCloudPlatform/include/colors.hpp \
-  /Users/wuhan/wuhan/iCollections/正在做.../正在做...../PointCloudPlatform/PointCloudPlatform/include/point_cloud_viewer.hpp \
+  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/typedefs.hpp \
+  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/colors.hpp \
+  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/point_cloud_viewer.hpp \
   /usr/local/include/pcl-1.9/pcl/visualization/pcl_visualizer.h \
   /usr/local/include/pcl-1.9/pcl/ModelCoefficients.h \
   /usr/local/include/pcl-1.9/pcl/visualization/common/actor_map.h \
@@ -490,4 +490,4 @@ dependencies: \
   /usr/local/include/vtk-8.2/vtkUnstructuredGrid.h \
   /usr/local/include/vtk-8.2/vtkUnstructuredGridBase.h \
   /usr/local/include/vtk-8.2/vtkPointSet.h \
-  /Users/wuhan/wuhan/iCollections/正在做.../正在做...../PointCloudPlatform/PointCloudPlatform/include/usage.hpp
+  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/usage.hpp

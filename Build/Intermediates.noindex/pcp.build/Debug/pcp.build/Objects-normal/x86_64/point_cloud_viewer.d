@@ -1,6 +1,6 @@
 dependencies: \
-  /Users/wuhan/wuhan/iCollections/正在做.../正在做...../PointCloudPlatform/PointCloudPlatform/src/point_cloud_viewer.cpp \
-  /Users/wuhan/wuhan/iCollections/正在做.../正在做...../PointCloudPlatform/PointCloudPlatform/include/point_cloud_viewer.hpp \
+  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/src/point_cloud_viewer.cpp \
+  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/point_cloud_viewer.hpp \
   /usr/local/include/pcl-1.9/pcl/visualization/pcl_visualizer.h \
   /usr/local/include/pcl-1.9/pcl/correspondence.h \
   /usr/local/include/pcl-1.9/pcl/ModelCoefficients.h \
@@ -354,5 +354,5 @@ dependencies: \
   /usr/local/include/vtk-8.2/vtkPolygon.h \
   /usr/local/include/vtk-8.2/vtkUnstructuredGrid.h \
   /usr/local/include/vtk-8.2/vtkUnstructuredGridBase.h \
-  /Users/wuhan/wuhan/iCollections/正在做.../正在做...../PointCloudPlatform/PointCloudPlatform/include/typedefs.hpp \
+  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/typedefs.hpp \
   /usr/local/include/pcl-1.9/pcl/point_types.h
