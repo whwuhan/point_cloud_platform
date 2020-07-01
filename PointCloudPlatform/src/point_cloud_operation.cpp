@@ -168,7 +168,7 @@ pcl::PolygonMesh::Ptr PointCloudOperation::surfaceReconstructionPoisson(int k,in
     pcl::PolygonMesh::Ptr mesh_ptr(new pcl::PolygonMesh);//创建多边形网格存储结果
     poisson.performReconstruction(*mesh_ptr);//泊松重建
     // 显示结果图
-    /*
+    
     boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer(new pcl::visualization::PCLVisualizer("3D viewer")) ;
     viewer->setBackgroundColor(0 , 0 , 0) ;
     viewer->addPolygonMesh(*mesh_ptr , "my") ;
@@ -177,7 +177,7 @@ pcl::PolygonMesh::Ptr PointCloudOperation::surfaceReconstructionPoisson(int k,in
         viewer->spinOnce(100) ;
         boost::this_thread::sleep(boost::posix_time::microseconds(100000)) ;
     }
-    */
+    
     //保存网格图
     //pcl::io::savePLYFile("result.ply", mesh);
     return mesh_ptr;
