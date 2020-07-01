@@ -3,6 +3,7 @@
 这是一个基于PCL的点云处理平台，支持.obj .ply .pcd文件。  
 所有的源代码都可以在/PointCloudPlatform/src下查看。  
 macOS可以用Xcode打开/pcp.xcodeproj查看源代码。  
+
 ### 2.macOS下启动程序：   
 ```
 % cd your_path/PointCloudPlatform/Build/Products/Debug  
