@@ -1,13 +1,10 @@
 # PointCloudPlatform
 ### 1.简介  
-<<<<<<< HEAD
 这是一个基于PCL的点云处理平台，支持.obj .ply .pcd文件。  
 所有的源代码都可以在/PointCloudPlatform/src下查看。  
 macOS用Xcode打开/pcp.xcodeproj查看源代码。  
-=======
 
 这是一个基于PCL的点云处理平台，支持.obj .ply .pcd文件。
->>>>>>> v0.1
 
 ---
 
@@ -32,3 +29,8 @@ macOS用Xcode打开/pcp.xcodeproj查看源代码。
 [Point Cloud Platform:]nor
 [Point Cloud Platform:]show
 ```
+### 5.存储处理后的点云  
+```
+[Point Cloud Platform:]write your_point_cloud_save_path
+```
+![avatar](image/QQ20200701-201648@2x.png)
