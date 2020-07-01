@@ -1,0 +1,7 @@
+COMMANDS :
+    clear : Clear the point cloud data has been read from the source file;
+    commands : Show the command list;
+    exit : Exit the procedure;
+    nor : Normalize the point cloud data which has been read;
+    man : Show the details about how to use command;
+    read : Read data from data source;

@@ -1,0 +1,6 @@
+COMMAND:
+    nor : nor
+    
+    DESCRIPTIONS:
+        Normalize the point cloud data which has read.
+	e.g. nor

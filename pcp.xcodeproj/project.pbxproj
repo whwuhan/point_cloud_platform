@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58338CFB24877EC400FD6135 /* point_cloud_operation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58338CF924877EC400FD6135 /* point_cloud_operation.cpp */; };
-		5859433C23CEF71700B08F1E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5859433B23CEF71700B08F1E /* main.cpp */; };
-		5860DE3D24879C1100DF0F7F /* point_cloud_viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5860DE3B24879C1100DF0F7F /* point_cloud_viewer.cpp */; };
-		58933D53248D12A500BB2CF2 /* usage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58933D51248D12A500BB2CF2 /* usage.cpp */; };
+		581CA09724AB735800D86D72 /* polygon_operation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 581CA09524AB735800D86D72 /* polygon_operation.cpp */; };
+		581CA09A24AB73B900D86D72 /* polygon_viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 581CA09824AB73B900D86D72 /* polygon_viewer.cpp */; };
+		584754DD24AC9B4600FEA4D2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5859433B23CEF71700B08F1E /* main.cpp */; };
 		58A386F424AAEFF700A252B0 /* libpcl_apps.1.9.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5811803E24AAEB0D00EC0EE3 /* libpcl_apps.1.9.1.dylib */; };
 		58A386F524AAEFF700A252B0 /* libpcl_apps.1.9.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5811803E24AAEB0D00EC0EE3 /* libpcl_apps.1.9.1.dylib */; };
 		58A386F624AAEFF700A252B0 /* libpcl_apps.1.9.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5811803E24AAEB0D00EC0EE3 /* libpcl_apps.1.9.1.dylib */; };
@@ -585,6 +584,9 @@
 		58A3892F24AAF05B00A252B0 /* libvtkViewsQt-8.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EAE8FC248692F200E458ED /* libvtkViewsQt-8.2.1.dylib */; };
 		58A3893024AAF05B00A252B0 /* libvtkWrappingPython38Core-8.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EAE894248692ED00E458ED /* libvtkWrappingPython38Core-8.2.1.dylib */; };
 		58A3893124AAF05B00A252B0 /* libvtkWrappingPython38Core-8.2.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EAE894248692ED00E458ED /* libvtkWrappingPython38Core-8.2.1.dylib */; };
+		58A3893524AB22C300A252B0 /* point_cloud_operation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58338CF924877EC400FD6135 /* point_cloud_operation.cpp */; };
+		58A3893624AB22C300A252B0 /* point_cloud_viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5860DE3B24879C1100DF0F7F /* point_cloud_viewer.cpp */; };
+		58A3893724AB22C300A252B0 /* usage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 58933D51248D12A500BB2CF2 /* usage.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -1137,6 +1139,10 @@
 		5811846624AAEB6500EC0EE3 /* vtkForwardingExecutable.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = vtkForwardingExecutable.cmake; sourceTree = "<group>"; };
 		5811846724AAEB6500EC0EE3 /* VTKConfig.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = VTKConfig.cmake; sourceTree = "<group>"; };
 		5811846824AAEB6500EC0EE3 /* VTKTargets.cmake */ = {isa = PBXFileReference; lastKnownFileType = text; path = VTKTargets.cmake; sourceTree = "<group>"; };
+		581CA09524AB735800D86D72 /* polygon_operation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = polygon_operation.cpp; sourceTree = "<group>"; };
+		581CA09624AB735800D86D72 /* polygon_operation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = polygon_operation.hpp; sourceTree = "<group>"; };
+		581CA09824AB73B900D86D72 /* polygon_viewer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = polygon_viewer.cpp; sourceTree = "<group>"; };
+		581CA09924AB73B900D86D72 /* polygon_viewer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = polygon_viewer.hpp; sourceTree = "<group>"; };
 		5821468F2473A73D0005870F /* libpcl_people.1.9.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_people.1.9.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.9.1_4/lib/libpcl_people.1.9.1.dylib; sourceTree = "<group>"; };
 		582146902473A73D0005870F /* libpcl_tracking.1.9.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_tracking.1.9.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.9.1_4/lib/libpcl_tracking.1.9.1.dylib; sourceTree = "<group>"; };
 		582146912473A73D0005870F /* libpcl_simulation_io.1.9.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_simulation_io.1.9.1.dylib; path = ../../../../../usr/local/Cellar/pcl/1.9.1_4/lib/libpcl_simulation_io.1.9.1.dylib; sourceTree = "<group>"; };
@@ -1516,9 +1522,6 @@
 		5827D0D52473AE8A0028345E /* libboost_stacktrace_addr2line-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_stacktrace_addr2line-mt.dylib"; path = "../../../../../usr/local/Cellar/boost/1.72.0_2/lib/libboost_stacktrace_addr2line-mt.dylib"; sourceTree = "<group>"; };
 		5827D0D62473AE8A0028345E /* libboost_math_tr1l.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_math_tr1l.dylib; path = ../../../../../usr/local/Cellar/boost/1.72.0_2/lib/libboost_math_tr1l.dylib; sourceTree = "<group>"; };
 		5827D0D72473AE8A0028345E /* libboost_program_options-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_program_options-mt.dylib"; path = "../../../../../usr/local/Cellar/boost/1.72.0_2/lib/libboost_program_options-mt.dylib"; sourceTree = "<group>"; };
-		582D90FA2494FEA1003A0E7A /* man */ = {isa = PBXFileReference; lastKnownFileType = text; path = man; sourceTree = "<group>"; };
-		582D90FB249503A7003A0E7A /* introduction */ = {isa = PBXFileReference; lastKnownFileType = text; path = introduction; sourceTree = "<group>"; };
-		582D90FC24950B46003A0E7A /* clear */ = {isa = PBXFileReference; lastKnownFileType = text; path = clear; sourceTree = "<group>"; };
 		58338CF924877EC400FD6135 /* point_cloud_operation.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = point_cloud_operation.cpp; sourceTree = "<group>"; };
 		58338CFA24877EC400FD6135 /* point_cloud_operation.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = point_cloud_operation.hpp; sourceTree = "<group>"; };
 		584C5D7C2487BEC70016265D /* typedefs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = typedefs.hpp; sourceTree = "<group>"; };
@@ -1528,8 +1531,14 @@
 		587882682489148E005E58B3 /* colors.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = colors.hpp; sourceTree = "<group>"; };
 		58933D51248D12A500BB2CF2 /* usage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = usage.cpp; sourceTree = "<group>"; };
 		58933D52248D12A500BB2CF2 /* usage.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = usage.hpp; sourceTree = "<group>"; };
-		58933D56248D1C9000BB2CF2 /* read */ = {isa = PBXFileReference; lastKnownFileType = text; path = read; sourceTree = "<group>"; };
-		58933D57248D1E9600BB2CF2 /* commands */ = {isa = PBXFileReference; lastKnownFileType = text; path = commands; sourceTree = "<group>"; };
+		58A3893224AB1EF800A252B0 /* test.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = test.cpp; sourceTree = "<group>"; };
+		58A71BAD24AC2FA30064BEC3 /* exit.pcpua */ = {isa = PBXFileReference; lastKnownFileType = text; name = exit.pcpua; path = Build/Products/Debug/usage/exit.pcpua; sourceTree = SOURCE_ROOT; };
+		58A71BAE24AC2FA30064BEC3 /* clear.pcpua */ = {isa = PBXFileReference; lastKnownFileType = text; name = clear.pcpua; path = Build/Products/Debug/usage/clear.pcpua; sourceTree = SOURCE_ROOT; };
+		58A71BAF24AC2FA30064BEC3 /* introduction.pcpua */ = {isa = PBXFileReference; lastKnownFileType = text; name = introduction.pcpua; path = Build/Products/Debug/usage/introduction.pcpua; sourceTree = SOURCE_ROOT; };
+		58A71BB024AC2FA30064BEC3 /* man.pcpua */ = {isa = PBXFileReference; lastKnownFileType = text; name = man.pcpua; path = Build/Products/Debug/usage/man.pcpua; sourceTree = SOURCE_ROOT; };
+		58A71BB124AC2FA30064BEC3 /* commands.pcpua */ = {isa = PBXFileReference; lastKnownFileType = text; name = commands.pcpua; path = Build/Products/Debug/usage/commands.pcpua; sourceTree = SOURCE_ROOT; };
+		58A71BB224AC2FA30064BEC3 /* read.pcpua */ = {isa = PBXFileReference; lastKnownFileType = text; name = read.pcpua; path = Build/Products/Debug/usage/read.pcpua; sourceTree = SOURCE_ROOT; };
+		58A71BB324AC2FA30064BEC3 /* nor.pcpua */ = {isa = PBXFileReference; lastKnownFileType = text; name = nor.pcpua; path = Build/Products/Debug/usage/nor.pcpua; sourceTree = SOURCE_ROOT; };
 		58B4D23323CD93D0007E9108 /* pcp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pcp; sourceTree = BUILT_PRODUCTS_DIR; };
 		58EAE775248692A200E458ED /* libpcl_ml.1.9.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_ml.1.9.1.dylib; path = ../../../../../../../../usr/local/Cellar/pcl/1.9.1_8/lib/libpcl_ml.1.9.1.dylib; sourceTree = "<group>"; };
 		58EAE776248692A200E458ED /* libpcl_octree.1.9.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libpcl_octree.1.9.1.dylib; path = ../../../../../../../../usr/local/Cellar/pcl/1.9.1_8/lib/libpcl_octree.1.9.1.dylib; sourceTree = "<group>"; };
@@ -3042,14 +3051,23 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		581CA09D24AB76D900D86D72 /* tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tools;
+			sourceTree = "<group>";
+		};
 		5859433923CEF67200B08F1E /* include */ = {
 			isa = PBXGroup;
 			children = (
-				58933D52248D12A500BB2CF2 /* usage.hpp */,
+				587882682489148E005E58B3 /* colors.hpp */,
 				58338CFA24877EC400FD6135 /* point_cloud_operation.hpp */,
 				5860DE3C24879C1100DF0F7F /* point_cloud_viewer.hpp */,
+				581CA09624AB735800D86D72 /* polygon_operation.hpp */,
+				581CA09924AB73B900D86D72 /* polygon_viewer.hpp */,
 				584C5D7C2487BEC70016265D /* typedefs.hpp */,
-				587882682489148E005E58B3 /* colors.hpp */,
+				58933D52248D12A500BB2CF2 /* usage.hpp */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -3059,6 +3077,8 @@
 			children = (
 				58338CF924877EC400FD6135 /* point_cloud_operation.cpp */,
 				5860DE3B24879C1100DF0F7F /* point_cloud_viewer.cpp */,
+				581CA09524AB735800D86D72 /* polygon_operation.cpp */,
+				581CA09824AB73B900D86D72 /* polygon_viewer.cpp */,
 				58933D51248D12A500BB2CF2 /* usage.cpp */,
 			);
 			path = src;
@@ -3793,11 +3813,13 @@
 		58933D55248D1BFE00BB2CF2 /* usage */ = {
 			isa = PBXGroup;
 			children = (
-				58933D56248D1C9000BB2CF2 /* read */,
-				582D90FC24950B46003A0E7A /* clear */,
-				582D90FA2494FEA1003A0E7A /* man */,
-				58933D57248D1E9600BB2CF2 /* commands */,
-				582D90FB249503A7003A0E7A /* introduction */,
+				58A71BAE24AC2FA30064BEC3 /* clear.pcpua */,
+				58A71BB124AC2FA30064BEC3 /* commands.pcpua */,
+				58A71BAD24AC2FA30064BEC3 /* exit.pcpua */,
+				58A71BAF24AC2FA30064BEC3 /* introduction.pcpua */,
+				58A71BB024AC2FA30064BEC3 /* man.pcpua */,
+				58A71BB324AC2FA30064BEC3 /* nor.pcpua */,
+				58A71BB224AC2FA30064BEC3 /* read.pcpua */,
 			);
 			path = usage;
 			sourceTree = "<group>";
@@ -3805,9 +3827,9 @@
 		58B4D22A23CD93D0007E9108 = {
 			isa = PBXGroup;
 			children = (
+				5887286E23D0526E0071B082 /* Frameworks */,
 				58B4D23523CD93D0007E9108 /* PointCloudPlatform */,
 				58B4D23423CD93D0007E9108 /* Products */,
-				5887286E23D0526E0071B082 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -3822,11 +3844,13 @@
 		58B4D23523CD93D0007E9108 /* PointCloudPlatform */ = {
 			isa = PBXGroup;
 			children = (
+				581CA09D24AB76D900D86D72 /* tools */,
 				58933D55248D1BFE00BB2CF2 /* usage */,
 				58803B052487443100CA6811 /* bin */,
 				5859433A23CEF68600B08F1E /* src */,
 				5859433923CEF67200B08F1E /* include */,
 				5859433B23CEF71700B08F1E /* main.cpp */,
+				58A3893224AB1EF800A252B0 /* test.cpp */,
 			);
 			path = PointCloudPlatform;
 			sourceTree = "<group>";
@@ -3889,10 +3913,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5860DE3D24879C1100DF0F7F /* point_cloud_viewer.cpp in Sources */,
-				58933D53248D12A500BB2CF2 /* usage.cpp in Sources */,
-				58338CFB24877EC400FD6135 /* point_cloud_operation.cpp in Sources */,
-				5859433C23CEF71700B08F1E /* main.cpp in Sources */,
+				584754DD24AC9B4600FEA4D2 /* main.cpp in Sources */,
+				58A3893524AB22C300A252B0 /* point_cloud_operation.cpp in Sources */,
+				581CA09724AB735800D86D72 /* polygon_operation.cpp in Sources */,
+				581CA09A24AB73B900D86D72 /* polygon_viewer.cpp in Sources */,
+				58A3893624AB22C300A252B0 /* point_cloud_viewer.cpp in Sources */,
+				58A3893724AB22C300A252B0 /* usage.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

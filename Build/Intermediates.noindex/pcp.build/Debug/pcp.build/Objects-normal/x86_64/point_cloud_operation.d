@@ -41,22 +41,16 @@ dependencies: \
   /usr/local/include/pcl-1.9/pcl/io/low_level_io.h \
   /usr/local/include/pcl-1.9/pcl/io/lzf.h \
   /usr/local/include/pcl-1.9/pcl/io/obj_io.h \
-  /usr/local/include/pcl-1.9/pcl/common/common.h \
-  /usr/local/include/pcl-1.9/pcl/common/impl/common.hpp \
-  /usr/local/include/pcl-1.9/pcl/registration/icp.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/ransac.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/sac.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/boost.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/sac_model.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/model_types.h \
-  /usr/local/include/pcl-1.9/pcl/search/search.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/sac_model_registration.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/eigen.h \
-  /usr/local/include/pcl-1.9/pcl/common/eigen.h \
+  /usr/local/include/pcl-1.9/pcl/kdtree/kdtree_flann.h \
+  /usr/local/include/pcl-1.9/pcl/kdtree/kdtree.h \
+  /usr/local/include/pcl-1.9/pcl/point_representation.h \
+  /usr/local/include/pcl-1.9/pcl/kdtree/flann.h \
+  /usr/local/include/boost/shared_array.hpp \
+  /usr/local/include/pcl-1.9/pcl/features/normal_3d_omp.h \
+  /usr/local/include/pcl-1.9/pcl/features/normal_3d.h \
+  /usr/local/include/pcl-1.9/pcl/features/feature.h \
   /usr/local/include/pcl-1.9/pcl/common/centroid.h \
   /usr/local/include/pcl-1.9/pcl/cloud_iterator.h \
-  /usr/local/include/pcl-1.9/pcl/correspondence.h \
-  /usr/local/include/pcl-1.9/pcl/impl/cloud_iterator.hpp \
   /usr/local/include/pcl-1.9/pcl/common/impl/accumulators.hpp \
   /usr/local/include/boost/mpl/filter_view.hpp \
   /usr/local/include/boost/mpl/begin_end.hpp \
@@ -338,19 +332,33 @@ dependencies: \
   /usr/local/include/boost/fusion/container/vector/detail/end_impl.hpp \
   /usr/local/include/boost/fusion/container/vector/detail/convert_impl.hpp \
   /usr/local/include/pcl-1.9/pcl/common/impl/centroid.hpp \
+  /usr/local/include/pcl-1.9/pcl/surface/gp3.h \
+  /usr/local/include/pcl-1.9/pcl/surface/reconstruction.h \
+  /usr/local/include/pcl-1.9/pcl/search/pcl_search.h \
+  /usr/local/include/pcl-1.9/pcl/surface/boost.h \
+  /usr/local/include/pcl-1.9/pcl/surface/impl/reconstruction.hpp \
+  /usr/local/include/pcl-1.9/pcl/surface/poisson.h \
+  /usr/local/include/pcl-1.9/pcl/common/common.h \
+  /usr/local/include/pcl-1.9/pcl/common/impl/common.hpp \
+  /usr/local/include/pcl-1.9/pcl/registration/icp.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/ransac.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/sac.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/boost.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/sac_model.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/model_types.h \
+  /usr/local/include/pcl-1.9/pcl/search/search.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/sac_model_registration.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/eigen.h \
+  /usr/local/include/pcl-1.9/pcl/common/eigen.h \
   /usr/local/include/pcl-1.9/pcl/sample_consensus/impl/sac_model_registration.hpp \
   /usr/local/include/pcl-1.9/pcl/common/point_operators.h \
   /usr/local/include/pcl-1.9/pcl/registration/registration.h \
   /usr/local/include/pcl-1.9/pcl/common/transforms.h \
   /usr/local/include/pcl-1.9/pcl/common/impl/transforms.hpp \
   /usr/local/include/pcl-1.9/pcl/search/kdtree.h \
-  /usr/local/include/pcl-1.9/pcl/kdtree/kdtree_flann.h \
-  /usr/local/include/pcl-1.9/pcl/kdtree/kdtree.h \
-  /usr/local/include/pcl-1.9/pcl/point_representation.h \
-  /usr/local/include/pcl-1.9/pcl/kdtree/flann.h \
-  /usr/local/include/boost/shared_array.hpp \
   /usr/local/include/pcl-1.9/pcl/registration/boost.h \
   /usr/local/include/pcl-1.9/pcl/registration/transformation_estimation.h \
+  /usr/local/include/pcl-1.9/pcl/correspondence.h \
   /usr/local/include/pcl-1.9/pcl/registration/correspondence_types.h \
   /usr/local/include/pcl-1.9/pcl/registration/impl/correspondence_types.hpp \
   /usr/local/include/pcl-1.9/pcl/registration/eigen.h \
@@ -390,17 +398,91 @@ dependencies: \
   /usr/local/include/pcl-1.9/pcl/filters/filter.h \
   /usr/local/include/pcl-1.9/pcl/filters/statistical_outlier_removal.h \
   /usr/local/include/pcl-1.9/pcl/filters/filter_indices.h \
-  /usr/local/include/pcl-1.9/pcl/search/pcl_search.h \
-  /usr/local/include/pcl-1.9/pcl/search/octree.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_search.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_pointcloud.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_base.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_nodes.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_container.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_key.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_iterator.h \
-  /usr/local/include/pcl-1.9/pcl/search/organized.h \
-  /usr/local/include/pcl-1.9/pcl/common/projection_matrix.h \
-  /usr/local/include/pcl-1.9/pcl/common/impl/projection_matrix.hpp \
+  /usr/local/include/pcl-1.9/pcl/visualization/pcl_visualizer.h \
+  /usr/local/include/pcl-1.9/pcl/ModelCoefficients.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/common/actor_map.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/point_cloud_handlers.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/point_cloud_geometry_handlers.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/point_cloud_color_handlers.h \
+  /usr/local/include/boost/unordered_map.hpp \
+  /usr/local/include/vtk-8.2/vtkLODActor.h \
+  /usr/local/include/vtk-8.2/vtkRenderingLODModule.h \
+  /usr/local/include/vtk-8.2/vtkRenderingCoreModule.h \
+  /usr/local/include/vtk-8.2/vtkFiltersCoreModule.h \
+  /usr/local/include/vtk-8.2/vtkActor.h \
+  /usr/local/include/vtk-8.2/vtkProp3D.h \
+  /usr/local/include/vtk-8.2/vtkProp.h \
+  /usr/local/include/vtk-8.2/vtkObject.h \
+  /usr/local/include/vtk-8.2/vtkSmartPointer.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/boost.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/common/common.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/point_picking_event.h \
+  /usr/local/include/vtk-8.2/vtkCommand.h \
+  /usr/local/include/vtk-8.2/vtkCommonCoreModule.h \
+  /usr/local/include/vtk-8.2/vtkObjectBase.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/area_picking_event.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/interactor_style.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/common/ren_win_interact_map.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/keyboard_event.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/mouse_event.h \
+  /usr/local/include/boost/signals2/signal.hpp \
+  /usr/local/include/vtk-8.2/vtkInteractorStyleRubberBandPick.h \
+  /usr/local/include/vtk-8.2/vtkInteractionStyleModule.h \
+  /usr/local/include/vtk-8.2/vtkInteractorStyleTrackballCamera.h \
+  /usr/local/include/vtk-8.2/vtkInteractorStyle.h \
+  /usr/local/include/vtk-8.2/vtkInteractorObserver.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/impl/pcl_visualizer.hpp \
+  /usr/local/include/vtk-8.2/vtkVersion.h \
+  /usr/local/include/vtk-8.2/vtkCellArray.h \
+  /usr/local/include/vtk-8.2/vtkLeaderActor2D.h \
+  /usr/local/include/vtk-8.2/vtkRenderingAnnotationModule.h \
+  /usr/local/include/vtk-8.2/vtkActor2D.h \
+  /usr/local/include/vtk-8.2/vtkCoordinate.h \
+  /usr/local/include/vtk-8.2/vtkVectorText.h \
+  /usr/local/include/vtk-8.2/vtkRenderingFreeTypeModule.h \
+  /usr/local/include/vtk-8.2/vtkPolyDataAlgorithm.h \
+  /usr/local/include/vtk-8.2/vtkAlgorithmOutput.h \
+  /usr/local/include/vtk-8.2/vtkCommonExecutionModelModule.h \
+  /usr/local/include/vtk-8.2/vtkFollower.h \
+  /usr/local/include/vtk-8.2/vtkMath.h \
+  /usr/local/include/vtk-8.2/vtkSphereSource.h \
+  /usr/local/include/vtk-8.2/vtkFiltersSourcesModule.h \
+  /usr/local/include/vtk-8.2/vtkProperty2D.h \
+  /usr/local/include/vtk-8.2/vtkDataSetSurfaceFilter.h \
+  /usr/local/include/vtk-8.2/vtkFiltersGeometryModule.h \
+  /usr/local/include/vtk-8.2/vtkPointData.h \
+  /usr/local/include/vtk-8.2/vtkPolyDataMapper.h \
+  /usr/local/include/vtk-8.2/vtkMapper.h \
+  /usr/local/include/vtk-8.2/vtkAbstractMapper3D.h \
+  /usr/local/include/vtk-8.2/vtkAbstractMapper.h \
+  /usr/local/include/vtk-8.2/vtkAlgorithm.h \
+  /usr/local/include/vtk-8.2/vtkSystemIncludes.h \
+  /usr/local/include/vtk-8.2/vtkProperty.h \
+  /usr/local/include/vtk-8.2/vtkCellData.h \
+  /usr/local/include/vtk-8.2/vtkCommonDataModelModule.h \
+  /usr/local/include/vtk-8.2/vtkDataSetAttributes.h \
+  /usr/local/include/vtk-8.2/vtkDataSetMapper.h \
+  /usr/local/include/vtk-8.2/vtkRenderer.h \
+  /usr/local/include/vtk-8.2/vtkViewport.h \
+  /usr/local/include/vtk-8.2/vtkVolumeCollection.h \
+  /usr/local/include/vtk-8.2/vtkPropCollection.h \
+  /usr/local/include/vtk-8.2/vtkCollection.h \
+  /usr/local/include/vtk-8.2/vtkVolume.h \
+  /usr/local/include/vtk-8.2/vtkActorCollection.h \
+  /usr/local/include/vtk-8.2/vtkRendererCollection.h \
+  /usr/local/include/vtk-8.2/vtkAppendPolyData.h \
+  /usr/local/include/vtk-8.2/vtkTextProperty.h \
+  /usr/local/include/vtk-8.2/vtkLineSource.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/common/shapes.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/eigen.h \
+  /usr/local/include/pcl-1.9/pcl/geometry/planar_polygon.h \
+  /usr/local/include/pcl-1.9/pcl/visualization/common/impl/shapes.hpp \
+  /usr/local/include/vtk-8.2/vtkPoints.h \
+  /usr/local/include/vtk-8.2/vtkPolygon.h \
+  /usr/local/include/vtk-8.2/vtkCell.h \
+  /usr/local/include/vtk-8.2/vtkUnstructuredGrid.h \
+  /usr/local/include/vtk-8.2/vtkUnstructuredGridBase.h \
+  /usr/local/include/vtk-8.2/vtkPointSet.h \
+  /usr/local/include/boost/thread/thread.hpp \
   /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/src/../include/typedefs.hpp \
   /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/src/../include/colors.hpp

@@ -41,22 +41,16 @@ dependencies: \
   /usr/local/include/pcl-1.9/pcl/io/low_level_io.h \
   /usr/local/include/pcl-1.9/pcl/io/lzf.h \
   /usr/local/include/pcl-1.9/pcl/io/obj_io.h \
-  /usr/local/include/pcl-1.9/pcl/common/common.h \
-  /usr/local/include/pcl-1.9/pcl/common/impl/common.hpp \
-  /usr/local/include/pcl-1.9/pcl/registration/icp.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/ransac.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/sac.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/boost.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/sac_model.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/model_types.h \
-  /usr/local/include/pcl-1.9/pcl/search/search.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/sac_model_registration.h \
-  /usr/local/include/pcl-1.9/pcl/sample_consensus/eigen.h \
-  /usr/local/include/pcl-1.9/pcl/common/eigen.h \
+  /usr/local/include/pcl-1.9/pcl/kdtree/kdtree_flann.h \
+  /usr/local/include/pcl-1.9/pcl/kdtree/kdtree.h \
+  /usr/local/include/pcl-1.9/pcl/point_representation.h \
+  /usr/local/include/pcl-1.9/pcl/kdtree/flann.h \
+  /usr/local/include/boost/shared_array.hpp \
+  /usr/local/include/pcl-1.9/pcl/features/normal_3d_omp.h \
+  /usr/local/include/pcl-1.9/pcl/features/normal_3d.h \
+  /usr/local/include/pcl-1.9/pcl/features/feature.h \
   /usr/local/include/pcl-1.9/pcl/common/centroid.h \
   /usr/local/include/pcl-1.9/pcl/cloud_iterator.h \
-  /usr/local/include/pcl-1.9/pcl/correspondence.h \
-  /usr/local/include/pcl-1.9/pcl/impl/cloud_iterator.hpp \
   /usr/local/include/pcl-1.9/pcl/common/impl/accumulators.hpp \
   /usr/local/include/boost/mpl/filter_view.hpp \
   /usr/local/include/boost/mpl/begin_end.hpp \
@@ -338,19 +332,33 @@ dependencies: \
   /usr/local/include/boost/fusion/container/vector/detail/end_impl.hpp \
   /usr/local/include/boost/fusion/container/vector/detail/convert_impl.hpp \
   /usr/local/include/pcl-1.9/pcl/common/impl/centroid.hpp \
+  /usr/local/include/pcl-1.9/pcl/surface/gp3.h \
+  /usr/local/include/pcl-1.9/pcl/surface/reconstruction.h \
+  /usr/local/include/pcl-1.9/pcl/search/pcl_search.h \
+  /usr/local/include/pcl-1.9/pcl/surface/boost.h \
+  /usr/local/include/pcl-1.9/pcl/surface/impl/reconstruction.hpp \
+  /usr/local/include/pcl-1.9/pcl/surface/poisson.h \
+  /usr/local/include/pcl-1.9/pcl/common/common.h \
+  /usr/local/include/pcl-1.9/pcl/common/impl/common.hpp \
+  /usr/local/include/pcl-1.9/pcl/registration/icp.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/ransac.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/sac.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/boost.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/sac_model.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/model_types.h \
+  /usr/local/include/pcl-1.9/pcl/search/search.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/sac_model_registration.h \
+  /usr/local/include/pcl-1.9/pcl/sample_consensus/eigen.h \
+  /usr/local/include/pcl-1.9/pcl/common/eigen.h \
   /usr/local/include/pcl-1.9/pcl/sample_consensus/impl/sac_model_registration.hpp \
   /usr/local/include/pcl-1.9/pcl/common/point_operators.h \
   /usr/local/include/pcl-1.9/pcl/registration/registration.h \
   /usr/local/include/pcl-1.9/pcl/common/transforms.h \
   /usr/local/include/pcl-1.9/pcl/common/impl/transforms.hpp \
   /usr/local/include/pcl-1.9/pcl/search/kdtree.h \
-  /usr/local/include/pcl-1.9/pcl/kdtree/kdtree_flann.h \
-  /usr/local/include/pcl-1.9/pcl/kdtree/kdtree.h \
-  /usr/local/include/pcl-1.9/pcl/point_representation.h \
-  /usr/local/include/pcl-1.9/pcl/kdtree/flann.h \
-  /usr/local/include/boost/shared_array.hpp \
   /usr/local/include/pcl-1.9/pcl/registration/boost.h \
   /usr/local/include/pcl-1.9/pcl/registration/transformation_estimation.h \
+  /usr/local/include/pcl-1.9/pcl/correspondence.h \
   /usr/local/include/pcl-1.9/pcl/registration/correspondence_types.h \
   /usr/local/include/pcl-1.9/pcl/registration/impl/correspondence_types.hpp \
   /usr/local/include/pcl-1.9/pcl/registration/eigen.h \
@@ -390,21 +398,6 @@ dependencies: \
   /usr/local/include/pcl-1.9/pcl/filters/filter.h \
   /usr/local/include/pcl-1.9/pcl/filters/statistical_outlier_removal.h \
   /usr/local/include/pcl-1.9/pcl/filters/filter_indices.h \
-  /usr/local/include/pcl-1.9/pcl/search/pcl_search.h \
-  /usr/local/include/pcl-1.9/pcl/search/octree.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_search.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_pointcloud.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_base.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_nodes.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_container.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_key.h \
-  /usr/local/include/pcl-1.9/pcl/octree/octree_iterator.h \
-  /usr/local/include/pcl-1.9/pcl/search/organized.h \
-  /usr/local/include/pcl-1.9/pcl/common/projection_matrix.h \
-  /usr/local/include/pcl-1.9/pcl/common/impl/projection_matrix.hpp \
-  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/typedefs.hpp \
-  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/colors.hpp \
-  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/point_cloud_viewer.hpp \
   /usr/local/include/pcl-1.9/pcl/visualization/pcl_visualizer.h \
   /usr/local/include/pcl-1.9/pcl/ModelCoefficients.h \
   /usr/local/include/pcl-1.9/pcl/visualization/common/actor_map.h \
@@ -490,4 +483,8 @@ dependencies: \
   /usr/local/include/vtk-8.2/vtkUnstructuredGrid.h \
   /usr/local/include/vtk-8.2/vtkUnstructuredGridBase.h \
   /usr/local/include/vtk-8.2/vtkPointSet.h \
+  /usr/local/include/boost/thread/thread.hpp \
+  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/typedefs.hpp \
+  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/colors.hpp \
+  /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/point_cloud_viewer.hpp \
   /Users/wuhan/wuhan/Code/CppCode/PointCloudPlatform/PointCloudPlatform/include/usage.hpp

@@ -1,7 +1,0 @@
-COMMAND:
-    exit : exit 
-    
-    DESCRIPTIONS:
-        Exit the procedure.
-
-    e.g. exit
