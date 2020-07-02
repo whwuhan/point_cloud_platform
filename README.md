@@ -42,11 +42,11 @@ macOS可以用Xcode打开/pcp.xcodeproj查看源代码。
 [Point Cloud Platform:]read your_point_cloud_data_path
 [Point Cloud Platform:]pos
 ```
-![avatar](image/QQ20200701-202527@2x.png)  
+![avatar](image/QQ20200702-212511.png)  
 ![avatar](image/tree_mesh_pos_1.png)  
 
 ---
-### 7.贪婪三角重建  
+### 7.贪婪投影三角重建  
 ```
 [Point Cloud Platform:]read your_point_cloud_data_path
 [Point Cloud Platform:]gp3
