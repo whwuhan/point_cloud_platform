@@ -182,6 +182,7 @@ pcl::PolygonMesh::Ptr PointCloudOperation::surfaceReconstructionPoisson(int k,in
     //pcl::io::savePLYFile("result.ply", mesh);
     return res_mesh_ptr;
 }
+//
 pcl::PolygonMesh::Ptr PointCloudOperation::surfaceReconstructionGP3(int k,float radius){
     //计算法向量
     pcl::NormalEstimation<pcl::PointXYZ,pcl::Normal> normal_estimation;//法向量估计对象
@@ -216,6 +217,8 @@ pcl::PolygonMesh::Ptr PointCloudOperation::surfaceReconstructionGP3(int k,float 
     //新增点信息
     std::vector<int> parts = gp3.getPartIDs();
     std::vector<int> states = gp3.getPointStates();
+    //保存网格图
+    pcl::io::savePLYFile("result.ply", *res_mesh_ptr);
     //显示结果
     boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer(new pcl::visualization::PCLVisualizer("3D viewer")) ;
     viewer->setBackgroundColor(0 , 0 , 0) ;
@@ -225,8 +228,6 @@ pcl::PolygonMesh::Ptr PointCloudOperation::surfaceReconstructionGP3(int k,float 
         viewer->spinOnce(100) ;
         boost::this_thread::sleep(boost::posix_time::microseconds(100000)) ;
     }
-    //保存网格图
-    //pcl::io::savePLYFile("result.ply", mesh);
     return res_mesh_ptr;
 }
 //清理点云
