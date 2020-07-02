@@ -165,13 +165,13 @@ pcl::PolygonMesh::Ptr PointCloudOperation::surfaceReconstructionPoisson(int k,in
     poisson.setSearchMethod(kdtree2);
     poisson.setInputCloud(cloud_with_normals);
     
-    pcl::PolygonMesh::Ptr mesh_ptr(new pcl::PolygonMesh);//创建多边形网格存储结果
-    poisson.performReconstruction(*mesh_ptr);//泊松重建
+    pcl::PolygonMesh::Ptr res_mesh_ptr(new pcl::PolygonMesh);//创建多边形网格存储结果
+    poisson.performReconstruction(*res_mesh_ptr);//泊松重建
     // 显示结果图
     
     boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer(new pcl::visualization::PCLVisualizer("3D viewer")) ;
     viewer->setBackgroundColor(0 , 0 , 0) ;
-    viewer->addPolygonMesh(*mesh_ptr , "my") ;
+    viewer->addPolygonMesh(*res_mesh_ptr , "res_mesh") ;
     viewer->addCoordinateSystem (0.1);
     while(!viewer->wasStopped()){
         viewer->spinOnce(100) ;
@@ -180,7 +180,54 @@ pcl::PolygonMesh::Ptr PointCloudOperation::surfaceReconstructionPoisson(int k,in
     
     //保存网格图
     //pcl::io::savePLYFile("result.ply", mesh);
-    return mesh_ptr;
+    return res_mesh_ptr;
+}
+pcl::PolygonMesh::Ptr PointCloudOperation::surfaceReconstructionGP3(int k,float radius){
+    //计算法向量
+    pcl::NormalEstimation<pcl::PointXYZ,pcl::Normal> normal_estimation;//法向量估计对象
+    pcl::PointCloud<pcl::Normal>::Ptr normals(new pcl::PointCloud<pcl::Normal>);
+    pcl::search::KdTree<pcl::PointXYZ>::Ptr kdtree(new pcl::search::KdTree<pcl::PointXYZ>);
+    kdtree->setInputCloud(_point_cloud_ptr);
+    normal_estimation.setInputCloud(_point_cloud_ptr);
+    normal_estimation.setSearchMethod(kdtree);
+    normal_estimation.setKSearch(k);
+    normal_estimation.compute(*normals);
+    //将法线和点云合在一起
+    pcl::PointCloud<pcl::PointNormal>::Ptr cloud_with_normals(new pcl::PointCloud<pcl::PointNormal>);
+    pcl::concatenateFields(*_point_cloud_ptr,*normals,*cloud_with_normals);
+    //创建搜索树
+    pcl::search::KdTree<pcl::PointNormal>::Ptr kdtree2(new pcl::search::KdTree<pcl::PointNormal>);
+    kdtree2->setInputCloud(cloud_with_normals);
+    //开始GP3重建
+    pcl::GreedyProjectionTriangulation<pcl::PointNormal> gp3;
+    pcl::PolygonMesh::Ptr res_mesh_ptr(new pcl::PolygonMesh);//重建结果
+    //设置参数
+    gp3.setSearchRadius(radius);//设置两点之间的最大距离
+    gp3.setMu(2.5);
+    gp3.setMaximumNearestNeighbors(100);
+    gp3.setMaximumSurfaceAngle(M_PI / 4); // 45 degrees
+    gp3.setMinimumAngle(M_PI / 18); // 10 degrees
+    gp3.setMaximumAngle(2 * M_PI / 3); // 120 degrees
+    gp3.setNormalConsistency(false);
+    //得到结果
+    gp3.setInputCloud(cloud_with_normals);
+    gp3.setSearchMethod(kdtree2);
+    gp3.reconstruct(*res_mesh_ptr);
+    //新增点信息
+    std::vector<int> parts = gp3.getPartIDs();
+    std::vector<int> states = gp3.getPointStates();
+    //显示结果
+    boost::shared_ptr<pcl::visualization::PCLVisualizer> viewer(new pcl::visualization::PCLVisualizer("3D viewer")) ;
+    viewer->setBackgroundColor(0 , 0 , 0) ;
+    viewer->addPolygonMesh(*res_mesh_ptr , "res_mesh") ;
+    viewer->addCoordinateSystem (0.1);
+    while(!viewer->wasStopped()){
+        viewer->spinOnce(100) ;
+        boost::this_thread::sleep(boost::posix_time::microseconds(100000)) ;
+    }
+    //保存网格图
+    //pcl::io::savePLYFile("result.ply", mesh);
+    return res_mesh_ptr;
 }
 //清理点云
 void PointCloudOperation::clear(){

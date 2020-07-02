@@ -101,7 +101,7 @@ int main(){
             continue;
         }
         //泊松重建
-        if(command_split[0] == "sur_rec_poisson"){
+        if(command_split[0] == "pos"){
             if(pco.getPointCloudPtr()->size() == 0){
                 std::cerr<<RED<<"PLEASE READ POINTCLOUD DATA FIRST!!!"<<RESET<<std::endl;
                 continue;
@@ -123,6 +123,28 @@ int main(){
                 continue;
             }else{
                 std::cerr<<RED<<"SURFACE RECONSTRUCTION FAILED!!!"<<RESET<<std::endl;
+                continue;
+            }
+        }
+        //gp3重建
+        if(command_split[0] == "gp3"){
+            if(pco.getPointCloudPtr()->size() == 0){
+                std::cerr<<RED<<"PLEASE READ POINTCLOUD DATA FIRST!!!"<<RESET<<std::endl;
+                continue;
+            }
+            int k = 20;//k近邻居k值
+            float radius = 0.025;//两点之间的最大半径
+            for(int i = 1;i < command_size;i++){
+                if(command_split[i]=="-k" && (++i<command_size)){k=atoi(command_split[i].c_str());}
+                if(command_split[i]=="-r" && (++i<command_size)){radius=atof(command_split[i].c_str());}
+            }
+            pcl::PolygonMesh::Ptr mesh_ptr= pco.surfaceReconstructionGP3(k,radius);
+            if(mesh_ptr){
+                std::cerr<<YELLOW<<"Point cloud has been reconstructed!!! k = "<<k<<" radius = "<<radius<<RESET<<std::endl;
+                continue;
+            }else{
+                std::cerr<<RED<<"SURFACE RECONSTRUCTION FAILED!!!"<<RESET<<std::endl;
+                continue;
             }
         }
         //exit退出程序

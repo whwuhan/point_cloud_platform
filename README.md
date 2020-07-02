@@ -19,7 +19,7 @@ macOS可以用Xcode打开/pcp.xcodeproj查看源代码。
 [Point Cloud Platform:]show
 ```
 ![avatar](image/QQ20200630-145641@2x.png)  
-![avatar](image/QQ20200630-145851@2x.png)  
+![avatar](image/tree_point_cloud_1.png)  
 
 ---
 ### 4.归一化点云并显示  
@@ -40,7 +40,16 @@ macOS可以用Xcode打开/pcp.xcodeproj查看源代码。
 ### 6.泊松重建  
 ```
 [Point Cloud Platform:]read your_point_cloud_data_path
-[Point Cloud Platform:]sur_rec_poisson
+[Point Cloud Platform:]pos
 ```
 ![avatar](image/QQ20200701-202527@2x.png)  
-![avatar](image/QQ20200701-202622@2x.png)  
+![avatar](image/tree_mesh_pos_1.png)  
+
+---
+### 7.贪婪三角重建  
+```
+[Point Cloud Platform:]read your_point_cloud_data_path
+[Point Cloud Platform:]gp3
+```
+![avatar](image/QQ20200702-185753.png)  
+![avatar](image/tree_mesh_gp3_1.png)  

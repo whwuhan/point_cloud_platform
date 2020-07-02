@@ -65,6 +65,7 @@ namespace wh{
             int downSamplingVoxel(float precision = 0.1f);//体素化降采样，成功返回1，否则-1
             int outliersRemoval(std::string &file_in, std::string &file_out);//去噪，成功返回1，否则-1
             pcl::PolygonMesh::Ptr surfaceReconstructionPoisson(int k=20,int degree=2);//泊松重建，参数k表示用k近邻居计算法线,degree值越大越精细,范围[1，5]
+            pcl::PolygonMesh::Ptr surfaceReconstructionGP3(int k=20,float redius=0.025);//GreedyProjectionTriangulation贪婪投影三角重建
             int ICP(std::string &file_model,std::string &file_raw,std::string &file_out);//ICP配准，成功返回1，否则-1
             void clear();//清理数据
             virtual ~PointCloudOperation();
