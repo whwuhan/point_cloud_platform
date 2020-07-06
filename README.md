@@ -11,7 +11,7 @@ macOS可以用Xcode打开/pcp.xcodeproj查看源代码。
 % cd your_path/PointCloudPlatform/Build/Products/Debug  
 % ./pcp  
 ```
-![avatar](image/QQ20200630-123927@2x.png)  
+![./pcp](image/QQ20200630-123927@2x.png)  
 
 ---
 ## 3.IO
@@ -20,15 +20,15 @@ macOS可以用Xcode打开/pcp.xcodeproj查看源代码。
 [Point Cloud Platform:]read your_point_cloud_data_path
 [Point Cloud Platform:]show
 ```
-![avatar](image/QQ20200630-145641@2x.png)  
-![avatar](image/tree_point_cloud_1.png)  
+![read](image/QQ20200630-145641@2x.png)  
+![point_cloud](image/tree_point_cloud_1.png)  
 
 ---
 ### 3.2.存储处理后的点云  
 ```
 [Point Cloud Platform:]write your_point_cloud_save_path
 ```
-![avatar](image/QQ20200701-201648@2x.png)  
+![write](image/QQ20200701-201648@2x.png)  
 
 ---
 ## 4 .归一化点云并显示  
@@ -45,8 +45,8 @@ macOS可以用Xcode打开/pcp.xcodeproj查看源代码。
 [Point Cloud Platform:]read your_point_cloud_data_path
 [Point Cloud Platform:]pos
 ```
-![avatar](image/QQ20200702-212511.png)  
-![avatar](image/tree_mesh_pos_1.png)  
+![pos](image/QQ20200702-212511.png)  
+![pos_result](image/tree_mesh_pos_1.png)  
 
 ---
 ### 5.2.贪婪投影三角重建  
@@ -54,5 +54,5 @@ macOS可以用Xcode打开/pcp.xcodeproj查看源代码。
 [Point Cloud Platform:]read your_point_cloud_data_path
 [Point Cloud Platform:]gp3
 ```
-![avatar](image/QQ20200702-185753.png)  
-![avatar](image/tree_mesh_gp3_1.png)  
+![gp3](image/QQ20200702-185753.png)  
+![gp3_result](image/tree_mesh_gp3_1.png)  
